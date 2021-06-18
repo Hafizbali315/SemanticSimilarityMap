@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+.app {
+	width: 100%;
+	height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header */
+
+.navbar {
+	padding: 0 13px;
+	height: 80px;
+	position: relative;
+	background-color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar h1 {
+	font-family: Buenos;
+	margin: 10px 0;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 43px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.menu_right {
+	align-items: center;
+	padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.hideRightMenu {
+	opacity: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu_right span {
+	margin-right: 35px;
+	font-family: Messina;
 }
+
+.menu_btn {
+	outline: none;
+	border: none;
+	background-color: white;
+}
+
+.navigation_sidebar {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 350px;
+	height: 100vh;
+	padding: 19px 29px;
+	background-color: #fff;
+	z-index: 11;
+}
+
+.navigation_sidebar h1 {
+	font-family: Buenos;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 43px;
+}
+
+.navigation_sidebar button {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	margin-top: 10px;
+}
+
+.navigation_sidebar .form-select {
+	font-size: 16px;
+	font-family: Messina;
+	line-height: 19px;
+	height: 42px;
+}
+
+.navigation_sidebar .form-select:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.navigation_sidebar .form-select:focus option:hover {
+	background-color: red;
+}
+
+.navigation_label {
+	color: #da0063;
+	font-family: Messina;
+	font-weight: 400;
+	font-size: 10px;
+}
+
+.navigation_sidebar h4 {
+	margin-top: 30px;
+	font-family: Buenos;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.navigation_sidebar span {
+	font-family: Messina;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 160%;
+}
+
+.navigation_sidebar p {
+	position: absolute;
+	bottom: 0;
+	margin: 0 30px 30px;
+	font-family: Messina;
+	font-size: 14px;
+}
+
+.navigation_sidebar p span {
+	opacity: 0.6;
+}
+
+@import './styles/password.css';
+@import './styles/map.css';
